@@ -2,6 +2,7 @@ package simulation;
 
 import java.util.Random;
 
+
 public class World {
 
 	private static final Random random = new Random();
@@ -10,7 +11,7 @@ public class World {
 
 	public static void main(String[] args) {
 		System.out.println("Start");
-		run();
+		Simulation.simulateDay();
 		System.out.println("Stop");
 	}
 
@@ -20,3 +21,4 @@ public class World {
 		}
 	}
 }
+
