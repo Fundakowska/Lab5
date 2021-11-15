@@ -1,14 +1,15 @@
 package simulation;
 
 public class Simulation {
-    private static final int WIDTH=20,HEIGHT=20;
-    private static final WorldMap map= WorldMap(WIDTH,HEIGHT);
+    private static final int WIDTH = 20, HEIGHT = 30;
+    private static final WorldMap worldMap = new WorldMap(WIDTH, HEIGHT);
 
-    public static WorldMap getMap(){
-        return map;
+    public static WorldMap getWorldMap() {
+        return worldMap;
     }
 
-    public static void simulateDay(){
-        map.run();
+    public static void simulateDay() {
+        worldMap.run();
+        worldMap.eat();
     }
 }
